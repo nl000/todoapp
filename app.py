@@ -5,7 +5,8 @@ import sys
 #Creates an application that is the name of our file i.e. app
 app = Flask(__name__)
 #configuring our application to connect to our postgres database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:09091990@localhost:5432/todoapp'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:09091990@localhost:5432/todoapp'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://nl000@todoapp-postgres:PLMGSStns1990@todoapp-postgres.postgres.database.azure.com:5432/todoapp'
 #This creates an instance (called db) of our database that we can interact using SQLAlchemy
 db = SQLAlchemy(app)
 
